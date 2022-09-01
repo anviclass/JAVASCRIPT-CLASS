@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Textarea</title>
+	<style type="text/css">
+		textarea{
+			width: 30%;
+
+		}
+		#text{
+			border: 5px dotted red;
+			width: 30%;
+			text-align: center;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<textarea oninput="abc()" id="textarea"></textarea>
+
+	<div id="text"></div>
+
+	<script type="text/javascript">
+		function abc(){
+			var text= document.getElementById("text");
+			var textarea= document.getElementById("textarea").value;
+			text.innerHTML=textarea;
+
+		}
+	</script>
+
+</body>
+</html>
